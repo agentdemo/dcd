@@ -13,12 +13,10 @@ export const heroSlides = [
   {
     src: '/images/banners/Elegant_Tuxedo_in_a_Grand_Lobby.png',
     alt: 'Sushill Waddhwa in a black tuxedo walking through a grand hotel lobby',
-    caption: 'Sophisticated by design, discerning by nature.',
   },
   {
     src: '/images/banners/Censored_Face_at_the_Seaside_Resort.png',
     alt: 'Sushill Waddhwa seated on a seaside resort terrace overlooking the ocean',
-    caption: 'Global perspective, adventurous spirit.',
   },
 ];
 
