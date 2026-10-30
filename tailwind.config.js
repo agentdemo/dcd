@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         sans: ['Poppins', 'system-ui', 'sans-serif'],
+        wordmark: ['"Libre Baskerville"', 'Georgia', 'serif'],
       },
       colors: {
         ivory: {

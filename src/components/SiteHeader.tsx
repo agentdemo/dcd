@@ -22,7 +22,7 @@ export default function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-        <a href="#home" onClick={closeMenu} className="font-serif text-lg font-semibold tracking-[0.18em] text-ink-900 sm:text-xl">
+        <a href="#home" onClick={closeMenu} className="font-wordmark text-base font-bold tracking-wide text-ink-900 sm:text-lg">
           SUSHILL WADDHWA
         </a>
 
