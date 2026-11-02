@@ -1,7 +1,7 @@
-import { ArrowUpRight, Plane } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import SectionHeader from '@/components/SectionHeader';
-import { ventures, privateJetShowcase } from '@/data/siteContent';
+import { ventures } from '@/data/siteContent';
 
 export default function BusinessSection() {
   const [flagship, ...otherVentures] = ventures;
@@ -18,10 +18,10 @@ export default function BusinessSection() {
         </Reveal>
 
         {/* ======================================================== */}
-        {/* CARD 1: FLAGSHIP - Ivory Background                      */}
+        {/* CARD 1: FLAGSHIP - Platinum World Grroup                 */}
         {/* ======================================================== */}
         <Reveal delay={1}>
-          <article className="mt-16 rounded-3xl border border-ivory-300 bg-ivory-100 p-8 shadow-sm transition-all duration-500 hover:border-gold-500 hover:shadow-xl sm:p-12">
+          <article className="mt-16 rounded-3xl border border-ivory-300 bg-ivory-50 p-8 shadow-sm transition-all duration-500 hover:border-gold-500 hover:shadow-xl sm:p-12">
             <div className="max-w-3xl">
               <span className="eyebrow text-gold-700">{flagship.badge}</span>
               <h3 className="mt-3 text-3xl font-semibold text-ink-900 sm:text-4xl lg:text-5xl">
@@ -36,13 +36,12 @@ export default function BusinessSection() {
         </Reveal>
 
         {/* ======================================================== */}
-        {/* CARDS 2 to 5: Alternating White & Ivory Cards Grid       */}
-        {/* Card 2: White, Card 3: Ivory, Card 4: White, Card 5: Ivory */}
+        {/* CARDS 2 to 5: 2x2 Grid of Global Ventures                */}
         {/* ======================================================== */}
         <div className="mt-8 grid gap-8 md:grid-cols-2">
           {otherVentures.map((venture, index) => {
             const isIvory = index % 2 === 1;
-            const bgClass = isIvory ? 'bg-ivory-100' : 'bg-white';
+            const bgClass = isIvory ? 'bg-ivory-50' : 'bg-white';
 
             return (
               <Reveal key={venture.id} delay={index % 2 === 0 ? undefined : 1}>
@@ -77,59 +76,6 @@ export default function BusinessSection() {
             );
           })}
         </div>
-
-        {/* ======================================================== */}
-        {/* SECTION 8: GULFSTREAM PRIVATE JETS SHOWCASE (White Card) */}
-        {/* Image: 08-gulfstream-private-jets.jpg                    */}
-        {/* ======================================================== */}
-        <Reveal delay={2}>
-          <article className="mt-12 rounded-3xl border border-ivory-300 bg-white p-8 shadow-sm transition-all duration-500 hover:border-gold-500 hover:shadow-xl sm:p-12">
-            <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-              <div className="lg:col-span-6">
-                <div className="flex items-center gap-2 text-gold-700 mb-3">
-                  <Plane size={20} />
-                  <span className="eyebrow text-gold-700">{privateJetShowcase.eyebrow}</span>
-                </div>
-                <h3 className="text-3xl font-semibold text-ink-900 sm:text-4xl lg:text-5xl">
-                  {privateJetShowcase.title}
-                </h3>
-                <p className="mt-3 font-serif text-xl text-gold-700">{privateJetShowcase.tagline}</p>
-                <p className="mt-5 text-base leading-relaxed text-ink-700 sm:text-lg">
-                  {privateJetShowcase.description}
-                </p>
-
-                <div className="mt-8 flex flex-wrap gap-3 text-xs uppercase tracking-wider text-ink-700">
-                  <span className="rounded-full border border-ivory-300 bg-ivory-100 px-4 py-2 font-medium">
-                    ✦ Long-Range Fleet Access
-                  </span>
-                  <span className="rounded-full border border-ivory-300 bg-ivory-100 px-4 py-2 font-medium">
-                    ✦ Bespoke Global Routing
-                  </span>
-                  <span className="rounded-full border border-ivory-300 bg-ivory-100 px-4 py-2 font-medium">
-                    ✦ VVIP Air Concierge
-                  </span>
-                </div>
-              </div>
-
-              {/* Gulfstream Private Jets Image (08-gulfstream-private-jets.jpg) */}
-              <div className="lg:col-span-6">
-                <div className="group relative aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-2xl border border-ivory-300 shadow-lg transition-all duration-500 hover:border-gold-500 hover:shadow-2xl">
-                  <img
-                    src={privateJetShowcase.imageSrc}
-                    alt={privateJetShowcase.title}
-                    className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="absolute bottom-3 left-3 rounded-full bg-obsidian-950/80 px-3 py-1 backdrop-blur-md border border-gold-400/30">
-                    <span className="text-[10px] uppercase tracking-wider text-gold-300 font-medium">
-                      Gulfstream Private Jets
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </Reveal>
       </div>
     </section>
   );

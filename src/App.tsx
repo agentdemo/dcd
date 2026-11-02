@@ -8,7 +8,7 @@ import ContactSection from '@/components/sections/ContactSection';
 
 function App() {
   return (
-    <div className="min-h-screen bg-ivory-100">
+    <div className="min-h-screen bg-obsidian-950 text-ivory-100">
       <SiteHeader />
       <main>
         <HeroSlideshow />
