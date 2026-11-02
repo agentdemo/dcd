@@ -1,0 +1,22 @@
+PLATINUM WORLD GROUP — WEBSITE IMAGE MAPPING
+
+The uploaded photos were supplied in reverse order. These are optimized JPEG copies for website use.
+Original images were not altered; copies were orientation-normalized, metadata-stripped, proportionally resized only when needed, and JPEG-compressed for web delivery.
+
+SECTION MAPPING
+
+1. About -> 01-about.jpg | source: WhatsApp Image 2026-11-02 at 00.53.32(3).jpeg | output: 1086x1448
+2. One And Only One Zabeel -> 02-one-and-only-one-zabeel.jpg | source: WhatsApp Image 2026-11-02 at 16.14.25(3).jpeg | output: 959x1280
+3. Six Senses Zighy Bay -> 03-six-senses-zighy-bay.jpg | source: WhatsApp Image 2026-11-02 at 16.15.57(3).jpeg | output: 960x1280
+4. Brand Collab The Lana By Dorchester Collection Dubai -> 04-brand-collab-the-lana-by-dorchester-collection-dubai.jpg | source: WhatsApp Image 2026-11-02 at 16.15.38(3).jpeg | output: 1536x2048
+5. Itc Ratnadipa Colombo -> 05-itc-ratnadipa-colombo.jpg | source: WhatsApp Image 2026-11-02 at 16.15.22(3).jpeg | output: 960x1280
+6. Kahanda Kanda Resort Sri Lanka -> 06-kahanda-kanda-resort-sri-lanka.jpg | source: WhatsApp Image 2026-11-02 at 16.16.30(3).jpeg | output: 960x1280
+7. Greek God Mens Cologne -> 07-greek-god-mens-cologne.jpg | source: WhatsApp Image 2026-11-02 at 16.16.50(3).jpeg | output: 1086x1448
+8. Gulfstream Private Jets -> 08-gulfstream-private-jets.jpg | source: WhatsApp Image 2026-11-02 at 16.17.16(3).jpeg | output: 1536x2048
+9. Switzerland Tourism -> 09-switzerland-tourism.jpg | source: WhatsApp Image 2026-11-02 at 16.17.46(3).jpeg | output: 1200x1600
+10. Brand Collab Finland Tourism -> 10-brand-collab-finland-tourism.jpg | source: WhatsApp Image 2026-11-02 at 16.19.32(3).jpeg | output: 1536x2048
+11. Cio Times -> 11-cio-times.jpg | source: WhatsApp Image 2026-11-02 at 16.27.22(3).jpeg | output: 588x810
+12. Exotica -> 12-exotica.jpg | source: WhatsApp Image 2026-11-02 at 16.27.23(3).jpeg | output: 588x778
+13. Times Of India Bombay Times -> 13-times-of-india-bombay-times.jpg | source: WhatsApp Image 2026-11-02 at 16.27.23 (1)(3).jpeg | output: 588x774
+14. Times Of India Delhi Times -> 14-times-of-india-delhi-times.jpg | source: WhatsApp Image 2026-11-02 at 16.27.23 (2)(3).jpeg | output: 588x892
+15. Economic Times -> 15-economic-times.jpg | source: WhatsApp Image 2026-11-02 at 16.27.24(3).jpeg | output: 588x760

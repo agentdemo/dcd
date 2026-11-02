@@ -1,4 +1,3 @@
-import { Image as ImageIcon } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import SectionHeader from '@/components/SectionHeader';
 import { campaigns, collaborationCategories, contactDetails } from '@/data/siteContent';
@@ -41,28 +40,14 @@ export default function CollaborationsSection() {
                 <article
                   className={`group flex h-full flex-col justify-between rounded-3xl border border-ivory-300 ${bgClass} p-5 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-xl`}
                 >
-                  {/* Replaceable Image Frame */}
-                  <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-dashed border-ivory-300 bg-ivory-50 transition-colors group-hover:border-gold-500">
-                    {item.imageSrc ? (
-                      <img
-                        src={item.imageSrc}
-                        alt={item.name}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="flex h-full w-full flex-col items-center justify-center p-6 text-center">
-                        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-gold-700 border border-ivory-300 shadow-sm mb-3">
-                          <ImageIcon size={20} />
-                        </div>
-                        <p className="text-xs font-semibold uppercase tracking-wider text-ink-900 line-clamp-2">
-                          {item.assetSlotName}
-                        </p>
-                        <p className="mt-1 text-[10px] text-ink-500">
-                          {item.isPendingAsset ? 'Client asset pending' : 'Asset ready'}
-                        </p>
-                      </div>
-                    )}
+                  {/* Image Frame with Aspect Ratio 3:4 */}
+                  <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-ivory-300 bg-ivory-50 transition-colors group-hover:border-gold-500 shadow-inner">
+                    <img
+                      src={item.imageSrc}
+                      alt={item.name}
+                      className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
 
                     {/* Sequential Index Pill */}
                     <div className="absolute top-3 left-3 rounded-full bg-ink-900/80 px-2.5 py-0.5 text-[10px] font-mono font-medium text-ivory-100 backdrop-blur-sm">
@@ -75,7 +60,7 @@ export default function CollaborationsSection() {
                     <p className="text-[11px] font-medium uppercase tracking-wider text-gold-700">
                       {item.category}
                     </p>
-                    <h3 className="mt-1 font-serif text-xl font-medium text-ink-900 group-hover:text-gold-700 transition-colors">
+                    <h3 className="mt-1 font-serif text-xl font-medium text-ink-900 group-hover:text-gold-700 transition-colors leading-snug">
                       {item.name}
                     </h3>
                   </div>

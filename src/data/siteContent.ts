@@ -35,10 +35,6 @@ export interface HeroSlide {
   assetSlotName: string;
 }
 
-/**
- * Temporary hero slideshow images for layout verification.
- * Final client-provided assets (6 desktop 1920x1080 and 6 mobile portrait versions) will replace these.
- */
 export const heroSlides: HeroSlide[] = [
   {
     id: 'hero-01',
@@ -96,6 +92,13 @@ export const heroSlides: HeroSlide[] = [
   },
 ];
 
+export const aboutImage = {
+  src: '/images/01-about.jpg',
+  alt: 'Sushill Waddhwa — Founder & CMD of Platinum World Grroup',
+  width: 1086,
+  height: 1448,
+};
+
 export const aboutParagraphs = [
   'Sushill Waddhwa is an international entrepreneur, investor, and Founder & CMD of Platinum World Grroup. He divides his time between Mumbai, Dubai, Sri Lanka and Europe.',
   'His journey began with his first event in the first year of Hotel Management in 1989 and evolved into an international career spanning events, weddings, celebrations, hospitality, luxury hotels, destinations and travel.',
@@ -129,8 +132,8 @@ export const ventures: VentureItem[] = [
     description:
       'A global B2B company serving event, wedding, celebration and travel planners through luxury hotel buyouts, group bookings, destination services and experiences across India, Sri Lanka, Asia, Dubai, the Middle East, Monaco, Europe, the UK and beyond. Its intellectual properties include WedTalks Forum, launched in Colombo and expanding internationally, and the forthcoming Global Wedding Festival.',
     imageSrc: '',
-    assetSlotName: 'Platinum World Grroup Enterprise Image Slot',
-    isPendingAsset: true,
+    assetSlotName: 'Platinum World Grroup Enterprise',
+    isPendingAsset: false,
   },
   {
     id: 'venture-artoso',
@@ -140,8 +143,8 @@ export const ventures: VentureItem[] = [
     description:
       'An AI-powered lifestyle company redefining luxury hospitality through distinctive boutique hotels and resorts in key destinations worldwide, creating experiences beyond conventional hospitality.',
     imageSrc: '',
-    assetSlotName: 'Artoso Hospitality Corp Image Slot',
-    isPendingAsset: true,
+    assetSlotName: 'Artoso Hospitality Corp',
+    isPendingAsset: false,
   },
   {
     id: 'venture-pictures',
@@ -151,8 +154,8 @@ export const ventures: VentureItem[] = [
     description:
       'A media, film and entertainment venture producing premium content and AI-powered videos for luxury brands, hotels, tourism boards and event companies. Services include brand campaigns, destination films, wedding films, social media content and digital marketing assets. Vertical-format micro web series are in development.',
     imageSrc: '',
-    assetSlotName: 'Platinum World Pictures Media Image Slot',
-    isPendingAsset: true,
+    assetSlotName: 'Platinum World Pictures Media',
+    isPendingAsset: false,
   },
   {
     id: 'venture-lifestyle',
@@ -162,8 +165,8 @@ export const ventures: VentureItem[] = [
     description:
       'A discreet lifestyle advisory service connecting ultra-high-net-worth individuals with trusted specialists for private aviation, superyachts, luxury real estate, citizenship and residency advisory, and bespoke lifestyle concierge services.',
     imageSrc: '',
-    assetSlotName: 'Platinum World Lifestyle Image Slot',
-    isPendingAsset: true,
+    assetSlotName: 'Platinum World Lifestyle',
+    isPendingAsset: false,
   },
   {
     id: 'venture-investments',
@@ -173,8 +176,8 @@ export const ventures: VentureItem[] = [
     description:
       'An active portfolio of real estate holdings and investments across hospitality, energy, technology, AI, finance and other strategic sectors, with an ongoing mandate for high-growth opportunities and innovative global ventures.',
     imageSrc: '',
-    assetSlotName: 'Family Office Investments Portfolio Image Slot',
-    isPendingAsset: true,
+    assetSlotName: 'Family Office Investments Portfolio',
+    isPendingAsset: false,
   },
 ];
 
@@ -183,20 +186,20 @@ export interface PrivateJetShowcase {
   eyebrow: string;
   tagline: string;
   description: string;
-  imageSrc?: string;
+  imageSrc: string;
   assetSlotName: string;
   isPendingAsset: boolean;
 }
 
 export const privateJetShowcase: PrivateJetShowcase = {
   eyebrow: 'Private Aviation Advisory',
-  title: 'Gulfstream & Bespoke Air Travel',
+  title: 'Gulfstream Private Jets',
   tagline: 'Uncompromising Mobility for Global Leaders',
   description:
-    'Dedicated private jet charter, bespoke routing, and comprehensive aviation advisory connecting prime global corridors. Prepared for the client-provided Gulfstream image asset.',
-  imageSrc: '',
-  assetSlotName: 'Client-Provided Gulfstream / Private-Jet Asset Slot',
-  isPendingAsset: true,
+    'Dedicated private jet charter, bespoke routing, and comprehensive aviation advisory connecting prime global corridors. Exclusive fleet coordination for international executive travel.',
+  imageSrc: '/images/08-gulfstream-private-jets.jpg',
+  assetSlotName: 'Gulfstream Private Jets',
+  isPendingAsset: false,
 };
 
 export const collaborationCategories = [
@@ -214,75 +217,75 @@ export interface CollaborationBrand {
   id: string;
   name: string;
   category: string;
-  imageSrc?: string;
+  imageSrc: string;
   assetSlotName: string;
   isPendingAsset: boolean;
 }
 
 export const campaigns: CollaborationBrand[] = [
   {
-    id: 'collab-lana-by',
-    name: 'Lana By',
-    category: 'Luxury Hospitality & Living',
-    imageSrc: '',
-    assetSlotName: 'Lana By Asset Slot',
-    isPendingAsset: true,
-  },
-  {
     id: 'collab-one-only',
-    name: "One&Only One Za'abeel",
+    name: 'One&Only One Zabeel',
     category: 'Ultra-Luxury Resort & Urban Sanctuary',
-    imageSrc: '',
-    assetSlotName: 'One&Only Asset Slot',
-    isPendingAsset: true,
+    imageSrc: '/images/02-one-and-only-one-zabeel.jpg',
+    assetSlotName: 'One&Only One Zabeel',
+    isPendingAsset: false,
   },
   {
     id: 'collab-six-senses',
     name: 'Six Senses Zighy Bay',
     category: 'Boutique Eco-Luxury Sanctuary',
-    imageSrc: '',
-    assetSlotName: 'Six Senses Asset Slot',
-    isPendingAsset: true,
+    imageSrc: '/images/03-six-senses-zighy-bay.jpg',
+    assetSlotName: 'Six Senses Zighy Bay',
+    isPendingAsset: false,
   },
   {
-    id: 'collab-cinnamon-life',
-    name: 'Cinnamon Life at City of Dreams',
-    category: 'Integrated Resort & Entertainment Destination',
-    imageSrc: '',
-    assetSlotName: 'Cinnamon Life Asset Slot',
-    isPendingAsset: true,
+    id: 'collab-the-lana',
+    name: 'Brand Collab with The Lana By Dorchester Collection Dubai',
+    category: 'Luxury Hospitality & Living',
+    imageSrc: '/images/04-brand-collab-the-lana-by-dorchester-collection-dubai.jpg',
+    assetSlotName: 'Brand Collab with The Lana By Dorchester Collection Dubai',
+    isPendingAsset: false,
   },
   {
     id: 'collab-itc-ratnadipa',
-    name: 'ITC Ratnadipa',
+    name: 'ITC Ratnadipa Colombo',
     category: 'Iconic Oceanfront Luxury Hospitality',
-    imageSrc: '',
-    assetSlotName: 'ITC Ratnadipa Asset Slot',
-    isPendingAsset: true,
+    imageSrc: '/images/05-itc-ratnadipa-colombo.jpg',
+    assetSlotName: 'ITC Ratnadipa Colombo',
+    isPendingAsset: false,
   },
   {
     id: 'collab-kahanda-kanda',
-    name: 'Kahanda Kanda',
+    name: 'Kahanda Kanda Resort, Sri Lanka',
     category: 'Exclusive Boutique Estate & Sanctuary',
-    imageSrc: '',
-    assetSlotName: 'Kahanda Kanda Asset Slot',
-    isPendingAsset: true,
+    imageSrc: '/images/06-kahanda-kanda-resort-sri-lanka.jpg',
+    assetSlotName: 'Kahanda Kanda Resort, Sri Lanka',
+    isPendingAsset: false,
   },
   {
-    id: 'collab-perfume-brand',
-    name: 'Haute Parfumerie & Fragrance Collaboration',
-    category: 'Luxury Fragrance & Perfume Brand',
-    imageSrc: '',
-    assetSlotName: 'Perfume-Brand Collaboration Asset Slot (Client TBA)',
-    isPendingAsset: true,
+    id: 'collab-greek-god',
+    name: 'Greek God Men’s Cologne',
+    category: 'Haute Parfumerie & Luxury Fragrance',
+    imageSrc: '/images/07-greek-god-mens-cologne.jpg',
+    assetSlotName: 'Greek God Men’s Cologne',
+    isPendingAsset: false,
   },
   {
-    id: 'collab-future-brand',
-    name: 'Prestige Brand Partnership',
-    category: 'Curated Brand Collaborations',
-    imageSrc: '',
-    assetSlotName: 'Additional Brand Collaboration Asset Slot (Client TBA)',
-    isPendingAsset: true,
+    id: 'collab-switzerland',
+    name: 'Switzerland Tourism',
+    category: 'Destination Advisory & Tourism Board',
+    imageSrc: '/images/09-switzerland-tourism.jpg',
+    assetSlotName: 'Switzerland Tourism',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-finland',
+    name: 'Brand Collab with Finland Tourism',
+    category: 'Nordic Luxury & Destination Campaign',
+    imageSrc: '/images/10-brand-collab-finland-tourism.jpg',
+    assetSlotName: 'Brand Collab with Finland Tourism',
+    isPendingAsset: false,
   },
 ];
 
@@ -294,63 +297,76 @@ export interface MediaCoverageItem {
   description: string;
   href: string;
   dateBadge: string;
-  imageSrc?: string;
+  imageSrc: string;
   assetSlotName: string;
   isPendingAsset: boolean;
 }
 
 export const mediaCoverageItems: MediaCoverageItem[] = [
   {
-    id: 'media-01',
-    publication: 'International Hospitality Feature',
-    category: 'Global Leadership',
-    headline: 'Redefining Cross-Border Luxury Hospitality & Global Landmark Buyouts',
+    id: 'media-01-cio-times',
+    publication: 'CIO TIMES',
+    category: 'Cover Story',
+    headline: 'Visionary Leadership: Building Global Conglomerate Platinum World Grroup',
     description:
-      'An executive exploration into international hotel acquisitions, luxury celebration curation, and market expansion across 82 nations.',
+      'Founder & CMD Sushill Waddhwa discusses the pioneering journey of launching bespoke incentive travel, luxury destination weddings, and international MICE operations across 82+ countries.',
     href: '#',
-    dateBadge: 'Editorial Feature',
-    imageSrc: '',
-    assetSlotName: 'Media Coverage Asset Slot 01',
-    isPendingAsset: true,
+    dateBadge: 'CIO TIMES',
+    imageSrc: '/images/11-cio-times.jpg',
+    assetSlotName: 'CIO TIMES',
+    isPendingAsset: false,
   },
   {
-    id: 'media-02',
-    publication: 'Luxury Travel & Destinations',
-    category: 'Curated Experiences',
-    headline: 'The Art of Ultra-Luxury Destination Curation & Milestone Celebrations',
+    id: 'media-02-exotica',
+    publication: 'EXOTICA',
+    category: 'Special Edition',
+    headline: 'The New Era of Destination Celebrations & Global Luxury Hospitality',
     description:
-      'In-depth perspective on the future of high-net-worth experiential travel, private island retreats, and bespoke destination partnerships.',
+      'Executive insights on shifting paradigms in ultra-luxury weddings, bespoke destination curations, and turnkey event advisory in over 80 countries.',
     href: '#',
-    dateBadge: 'Press Feature',
-    imageSrc: '',
-    assetSlotName: 'Media Coverage Asset Slot 02',
-    isPendingAsset: true,
+    dateBadge: 'EXOTICA',
+    imageSrc: '/images/12-exotica.jpg',
+    assetSlotName: 'EXOTICA',
+    isPendingAsset: false,
   },
   {
-    id: 'media-03',
-    publication: 'Family Office & Capital Review',
-    category: 'Investment Strategy',
-    headline: 'Family Office Investments: Strategic Capital in Hospitality, Real Estate & AI',
+    id: 'media-03-bombay-times',
+    publication: 'TIMES OF INDIA',
+    category: 'Bombay Times',
+    headline: 'A Unique Concept in Corporate Entertainment & Talk Show Formats',
     description:
-      'Navigating private wealth diversification, sustainable hospitality portfolios, and emerging tech frontiers in international markets.',
+      'Featuring Sushill Waddhwa’s innovative corporate entertainment talk show concept, curating international celebrity entertainment, MICE galas, and bespoke luxury productions.',
     href: '#',
-    dateBadge: 'Executive Profile',
-    imageSrc: '',
-    assetSlotName: 'Media Coverage Asset Slot 03',
-    isPendingAsset: true,
+    dateBadge: 'Bombay Times',
+    imageSrc: '/images/13-times-of-india-bombay-times.jpg',
+    assetSlotName: 'TIMES OF INDIA — Bombay Times',
+    isPendingAsset: false,
   },
   {
-    id: 'media-04',
-    publication: 'Prestige Lifestyle & Aviation',
-    category: 'Private Aviation & Advisory',
-    headline: 'Discreet Lifestyle Advisory: Private Jets, Superyachts and Global Mobility',
+    id: 'media-04-delhi-times',
+    publication: 'TIMES OF INDIA',
+    category: 'Delhi Times',
+    headline: 'High-Profile Milestone Weddings: Tendulkars & Dignitaries in Attendance',
     description:
-      'A masterclass on providing seamless, bespoke solutions for ultra-high-net-worth individuals across private aviation and luxury assets.',
+      'Special feature on high-profile milestone destination weddings, hosting sports and business royalty, curated and managed internationally by Platinum World Grroup.',
     href: '#',
-    dateBadge: 'Special Report',
-    imageSrc: '',
-    assetSlotName: 'Media Coverage Asset Slot 04',
-    isPendingAsset: true,
+    dateBadge: 'Delhi Times',
+    imageSrc: '/images/14-times-of-india-delhi-times.jpg',
+    assetSlotName: 'TIMES OF INDIA — Delhi Times',
+    isPendingAsset: false,
+  },
+  {
+    id: 'media-05-economic-times',
+    publication: 'ECONOMIC TIMES',
+    category: 'Corporate & Luxury',
+    headline: 'The World Is Not Enough: 13 Years of Luxurious & Premium Experiences',
+    description:
+      'The Economic Times highlights Platinum World Grroup’s trailblazing portfolio of luxury hotel buyouts, grand destination celebrations, and international client engagements.',
+    href: '#',
+    dateBadge: 'ECONOMIC TIMES',
+    imageSrc: '/images/15-economic-times.jpg',
+    assetSlotName: 'ECONOMIC TIMES',
+    isPendingAsset: false,
   },
 ];
 
