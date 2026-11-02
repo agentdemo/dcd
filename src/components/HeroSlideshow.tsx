@@ -27,7 +27,8 @@ export default function HeroSlideshow() {
   return (
     <section id="home" className="pt-20 bg-obsidian-950">
       {/* ============================================================ */}
-      {/* 1. HERO BANNER - Dark Navy Blue / Obsidian Background        */}
+      {/* 1. HERO BANNER - Clean, Unobstructed Full Photographic View  */}
+      {/* (Text removed from hero and placed in top-left navbar)       */}
       {/* ============================================================ */}
       <div
         className="relative h-[86svh] min-h-[560px] w-full overflow-hidden bg-obsidian-950 lg:h-[90vh]"
@@ -57,9 +58,8 @@ export default function HeroSlideshow() {
           </picture>
         ))}
 
-        {/* Cinematic Obsidian/Navy Depth Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/45 to-obsidian-950/60" />
-        <div className="absolute inset-0 bg-radial from-transparent via-transparent to-obsidian-950/80 pointer-events-none" />
+        {/* Subtle Cinematic Vignette for Depth */}
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950/80 via-transparent to-black/20 pointer-events-none" />
 
         {/* Top Indicators / Slide Status */}
         {total > 1 && (
@@ -86,21 +86,10 @@ export default function HeroSlideshow() {
           </div>
         )}
 
-        {/* Center-Stage Exact Name with Premium White & Gold 3D Embossed Effect */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center z-10">
-          <div className="max-w-6xl mx-auto">
-            <h1
-              className="embossed-gold-3d font-wordmark text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-[0.12em] sm:tracking-[0.16em] uppercase select-none transition-transform duration-700 leading-tight"
-            >
-              SUSHILL WADDHWA
-            </h1>
-          </div>
-        </div>
-
         {/* Slide Counter & Navigation Controls */}
         {total > 1 && (
           <div className="absolute bottom-6 right-6 flex items-center gap-3 sm:bottom-8 sm:right-10 z-20">
-            <span className="mr-2 text-xs font-mono tracking-widest text-ivory-100/60 select-none">
+            <span className="mr-2 text-xs font-mono tracking-widest text-ivory-100/70 select-none">
               {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
             </span>
             <button
