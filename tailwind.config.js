@@ -21,9 +21,16 @@ export default {
           700: '#3A3834',
           900: '#161513',
         },
+        obsidian: {
+          800: '#111827',
+          900: '#0C1222',
+          950: '#080C16',
+        },
         gold: {
           300: '#E0C995',
+          400: '#D4AF37',
           500: '#B8935A',
+          600: '#A37E44',
           700: '#8A6A3A',
         },
       },
@@ -39,10 +46,15 @@ export default {
           from: { opacity: '0', transform: 'translateY(8px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
+        'marquee-ltr': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         kenburns: 'kenburns 7s ease-out forwards',
         'fade-up': 'fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1)',
+        'marquee-ltr': 'marquee-ltr 32s linear infinite',
       },
     },
   },
