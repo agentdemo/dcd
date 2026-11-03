@@ -102,24 +102,4 @@
   .link-underline:hover::after {
     width: 100%;
   }
-
-  /* Smooth Continuous Left-to-Right Scrolling Ticker */
-  @keyframes marquee-ltr {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-
-  .animate-marquee-ltr {
-    display: flex;
-    width: max-content;
-    animation: marquee-ltr 28s linear infinite;
-  }
-
-  .animate-marquee-ltr:hover {
-    animation-play-state: paused;
-  }
 }

@@ -99,18 +99,11 @@ export const aboutImage = {
   height: 1448,
 };
 
-export const aboutParagraphs = [
-  'Sushill Waddhwa is an international entrepreneur, investor, and Founder & CMD of Platinum World Grroup. He divides his time between Mumbai, Dubai, Sri Lanka and Europe.',
-  'His journey began with his first event in the first year of Hotel Management in 1989 and evolved into an international career spanning events, weddings, celebrations, hospitality, luxury hotels, destinations and travel.',
-  'His work has taken him across 82 countries and 2,040+ luxury hotels, building extensive relationships with hotels, destinations, planners and hospitality leaders worldwide. He is constantly exploring new hotels and destinations to promote for events, destination weddings, celebrations and luxury travel.',
-  'His entrepreneurial interests span events and wedding tourism, hospitality, investments, lifestyle experiences, media and entertainment. Beyond business, he is passionate about travel, fitness, style, hotels, astrology, numerology and discovering new experiences. He continues to explore new ventures, creative storytelling and emerging technologies.',
-];
-
-export const aboutStats = [
-  { value: '82', label: 'Countries' },
-  { value: '2,040+', label: 'Luxury hotels' },
-  { value: '1989', label: 'The Journey Begins' },
-];
+export const aboutSegment = {
+  title: '82 countries and 2,040+ luxury hotels',
+  paragraph:
+    'His work has taken him across 82 countries and 2,040+ luxury hotels, building extensive relationships with hotels, destinations, planners and hospitality leaders worldwide. He is constantly exploring new hotels and destinations to promote for events, destination weddings, celebrations and luxury travel.',
+};
 
 export interface VentureItem {
   id: string;
@@ -181,27 +174,6 @@ export const ventures: VentureItem[] = [
   },
 ];
 
-export interface PrivateJetShowcase {
-  title: string;
-  eyebrow: string;
-  tagline: string;
-  description: string;
-  imageSrc: string;
-  assetSlotName: string;
-  isPendingAsset: boolean;
-}
-
-export const privateJetShowcase: PrivateJetShowcase = {
-  eyebrow: 'Private Aviation Advisory',
-  title: 'Gulfstream Private Jets',
-  tagline: 'Uncompromising Mobility for Global Leaders',
-  description:
-    'Dedicated private jet charter, bespoke routing, and comprehensive aviation advisory connecting prime global corridors. Exclusive fleet coordination for international executive travel.',
-  imageSrc: '/images/08-gulfstream-private-jets.jpg',
-  assetSlotName: 'Gulfstream Private Jets',
-  isPendingAsset: false,
-};
-
 export const collaborationCategories = [
   'Luxury hotels and resorts',
   'Tourism boards and destinations',
@@ -216,7 +188,6 @@ export const collaborationCategories = [
 export interface CollaborationBrand {
   id: string;
   name: string;
-  category: string;
   imageSrc: string;
   assetSlotName: string;
   isPendingAsset: boolean;
@@ -226,7 +197,6 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-one-only',
     name: 'One&Only One Zabeel',
-    category: 'Ultra-Luxury Resort & Urban Sanctuary',
     imageSrc: '/images/02-one-and-only-one-zabeel.jpg',
     assetSlotName: 'One&Only One Zabeel',
     isPendingAsset: false,
@@ -234,15 +204,13 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-six-senses',
     name: 'Six Senses Zighy Bay',
-    category: 'Boutique Eco-Luxury Sanctuary',
-    imageSrc: '/images/03-six-senses-zighy-bay.jpg',
+    imageSrc: '/images/05-itc-ratnadipa-colombo.jpg',
     assetSlotName: 'Six Senses Zighy Bay',
     isPendingAsset: false,
   },
   {
     id: 'collab-the-lana',
     name: 'Brand Collab with The Lana By Dorchester Collection Dubai',
-    category: 'Luxury Hospitality & Living',
     imageSrc: '/images/04-brand-collab-the-lana-by-dorchester-collection-dubai.jpg',
     assetSlotName: 'Brand Collab with The Lana By Dorchester Collection Dubai',
     isPendingAsset: false,
@@ -250,15 +218,13 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-itc-ratnadipa',
     name: 'ITC Ratnadipa Colombo',
-    category: 'Iconic Oceanfront Luxury Hospitality',
-    imageSrc: '/images/05-itc-ratnadipa-colombo.jpg',
+    imageSrc: '/images/03-six-senses-zighy-bay.jpg',
     assetSlotName: 'ITC Ratnadipa Colombo',
     isPendingAsset: false,
   },
   {
     id: 'collab-kahanda-kanda',
     name: 'Kahanda Kanda Resort, Sri Lanka',
-    category: 'Exclusive Boutique Estate & Sanctuary',
     imageSrc: '/images/06-kahanda-kanda-resort-sri-lanka.jpg',
     assetSlotName: 'Kahanda Kanda Resort, Sri Lanka',
     isPendingAsset: false,
@@ -266,7 +232,6 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-greek-god',
     name: 'Greek God Men’s Cologne',
-    category: 'Haute Parfumerie & Luxury Fragrance',
     imageSrc: '/images/07-greek-god-mens-cologne.jpg',
     assetSlotName: 'Greek God Men’s Cologne',
     isPendingAsset: false,
@@ -274,7 +239,6 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-switzerland',
     name: 'Switzerland Tourism',
-    category: 'Destination Advisory & Tourism Board',
     imageSrc: '/images/09-switzerland-tourism.jpg',
     assetSlotName: 'Switzerland Tourism',
     isPendingAsset: false,
@@ -282,9 +246,15 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-finland',
     name: 'Brand Collab with Finland Tourism',
-    category: 'Nordic Luxury & Destination Campaign',
     imageSrc: '/images/10-brand-collab-finland-tourism.jpg',
     assetSlotName: 'Brand Collab with Finland Tourism',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-gulfstream',
+    name: 'Gulfstream Private Jets',
+    imageSrc: '/images/08-gulfstream-private-jets.jpg',
+    assetSlotName: 'Gulfstream Private Jets',
     isPendingAsset: false,
   },
 ];

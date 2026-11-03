@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { brandAttributes, heroSlides } from '@/data/siteContent';
+import { heroSlides } from '@/data/siteContent';
 
 const SLIDE_INTERVAL_MS = 6500;
 
@@ -20,9 +20,6 @@ export default function HeroSlideshow() {
   }, [total]);
 
   const goTo = (next: number) => setIndex((next + total) % total);
-
-  // Triple set of the 6 descriptive words to guarantee a seamless, gapless continuous loop across any screen width
-  const tickerWords = [...brandAttributes, ...brandAttributes, ...brandAttributes];
 
   return (
     <section id="home" className="pt-20 bg-obsidian-950">
@@ -110,34 +107,6 @@ export default function HeroSlideshow() {
             </button>
           </div>
         )}
-      </div>
-
-      {/* ============================================================ */}
-      {/* 2. CONTINUOUS LEFT-TO-RIGHT SCROLLING STRIP                  */}
-      {/* Displays ONLY the 6 descriptive words below the banner       */}
-      {/* ============================================================ */}
-      <div
-        className="relative border-y border-gold-500/20 bg-obsidian-900 py-4 overflow-hidden shadow-2xl"
-        aria-label="Brand Core Attributes"
-      >
-        <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-obsidian-900 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-obsidian-900 to-transparent z-10 pointer-events-none" />
-
-        <div className="animate-marquee-ltr hover-pause flex items-center whitespace-nowrap">
-          {tickerWords.map((word, wordIndex) => (
-            <div
-              key={`${word}-${wordIndex}`}
-              className="inline-flex items-center gap-6 sm:gap-10 px-4 sm:px-6 select-none"
-            >
-              <span className="font-sans text-xs sm:text-sm font-semibold uppercase tracking-[0.28em] text-ivory-100 transition-colors hover:text-gold-300">
-                {word}
-              </span>
-              <span className="text-gold-400/80 text-xs sm:text-sm select-none" aria-hidden="true">
-                ✦
-              </span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
