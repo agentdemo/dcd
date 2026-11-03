@@ -99,11 +99,18 @@ export const aboutImage = {
   height: 1448,
 };
 
-export const aboutSegment = {
-  title: '82 countries and 2,040+ luxury hotels',
-  paragraph:
-    'His work has taken him across 82 countries and 2,040+ luxury hotels, building extensive relationships with hotels, destinations, planners and hospitality leaders worldwide. He is constantly exploring new hotels and destinations to promote for events, destination weddings, celebrations and luxury travel.',
-};
+export const aboutParagraphs = [
+  'Sushill Waddhwa is an international entrepreneur, investor, and Founder & CMD of Platinum World Grroup. He divides his time between Mumbai, Dubai, Sri Lanka and Europe.',
+  'His journey began with his first event in the first year of Hotel Management in 1989 and evolved into an international career spanning events, weddings, celebrations, hospitality, luxury hotels, destinations and travel.',
+  'His work has taken him across 82 countries and 2,040+ luxury hotels, building extensive relationships with hotels, destinations, planners and hospitality leaders worldwide. He is constantly exploring new hotels and destinations to promote for events, destination weddings, celebrations and luxury travel.',
+  'His entrepreneurial interests span events and wedding tourism, hospitality, investments, lifestyle experiences, media and entertainment. Beyond business, he is passionate about travel, fitness, style, hotels, astrology, numerology and discovering new experiences. He continues to explore new ventures, creative storytelling and emerging technologies.',
+];
+
+export const aboutStats = [
+  { value: '82', label: 'Countries' },
+  { value: '2,040+', label: 'Luxury hotels' },
+  { value: '1989', label: 'The Journey Begins' },
+];
 
 export interface VentureItem {
   id: string;
