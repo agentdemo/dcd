@@ -1,7 +1,11 @@
 import { ArrowUpRight } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import SectionHeader from '@/components/SectionHeader';
-import { ventures } from '@/data/siteContent';
+import { ventures, VentureItem } from '@/data/siteContent';
+
+function linkProps(venture: VentureItem) {
+  return venture.href ? { href: venture.href, target: '_blank', rel: 'noopener noreferrer' } : {};
+}
 
 export default function BusinessSection() {
   const [flagship, ...otherVentures] = ventures;
@@ -21,18 +25,27 @@ export default function BusinessSection() {
         {/* CARD 1: FLAGSHIP - Platinum World Grroup                 */}
         {/* ======================================================== */}
         <Reveal delay={1}>
-          <article className="mt-16 rounded-3xl border border-ivory-300 bg-ivory-50 p-8 shadow-sm transition-all duration-500 hover:border-gold-500 hover:shadow-xl sm:p-12">
-            <div className="max-w-3xl">
-              <span className="eyebrow text-gold-700">{flagship.badge}</span>
-              <h3 className="mt-3 text-3xl font-semibold text-ink-900 sm:text-4xl lg:text-5xl">
-                {flagship.name}
-              </h3>
-              <p className="mt-4 font-serif text-lg text-gold-700 sm:text-xl">{flagship.tagline}</p>
-              <p className="mt-5 text-base leading-relaxed text-ink-700 sm:text-lg">
-                {flagship.description}
-              </p>
+          <a
+            {...linkProps(flagship)}
+            className="group mt-16 block rounded-3xl border border-ivory-300 bg-ivory-50 p-8 shadow-sm transition-all duration-500 hover:border-gold-500 hover:shadow-xl sm:p-12"
+          >
+            <div className="flex items-start justify-between gap-4 max-w-3xl">
+              <div>
+                <span className="eyebrow text-gold-700">{flagship.badge}</span>
+                <h3 className="mt-3 text-3xl font-semibold text-ink-900 sm:text-4xl lg:text-5xl">
+                  {flagship.name}
+                </h3>
+              </div>
+              <ArrowUpRight
+                size={26}
+                className="mt-2 shrink-0 text-ink-300 transition-all duration-500 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-gold-700"
+              />
             </div>
-          </article>
+            <div className="max-w-3xl">
+              <p className="mt-4 font-serif text-lg text-gold-700 sm:text-xl">{flagship.tagline}</p>
+              <p className="mt-5 text-base leading-relaxed text-ink-700 sm:text-lg">{flagship.description}</p>
+            </div>
+          </a>
         </Reveal>
 
         {/* ======================================================== */}
@@ -45,7 +58,8 @@ export default function BusinessSection() {
 
             return (
               <Reveal key={venture.id} delay={index % 2 === 0 ? undefined : 1}>
-                <article
+                <a
+                  {...linkProps(venture)}
                   className={`group flex h-full flex-col justify-between rounded-3xl border border-ivory-300 ${bgClass} p-8 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-xl sm:p-10`}
                 >
                   <div>
@@ -71,7 +85,7 @@ export default function BusinessSection() {
                       {venture.description}
                     </p>
                   </div>
-                </article>
+                </a>
               </Reveal>
             );
           })}

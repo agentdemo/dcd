@@ -118,6 +118,7 @@ export interface VentureItem {
   badge?: string;
   tagline: string;
   description: string;
+  href?: string;
   imageSrc?: string;
   assetSlotName: string;
   isPendingAsset: boolean;
@@ -126,6 +127,7 @@ export interface VentureItem {
 export const ventures: VentureItem[] = [
   {
     id: 'venture-pwg',
+    href: 'https://www.platinumworld.net/',
     name: 'Platinum World Grroup',
     badge: 'Flagship Enterprise',
     tagline: '500+ Destinations | 100+ Countries | One Call Away',
@@ -137,6 +139,7 @@ export const ventures: VentureItem[] = [
   },
   {
     id: 'venture-artoso',
+    href: 'https://artosoworld.com/',
     name: 'Artoso Hospitality Corp',
     badge: 'Boutique Hospitality',
     tagline: 'Global Footprint. Local Flair. Luxury Boutique Hotels Worldwide.',
@@ -148,6 +151,7 @@ export const ventures: VentureItem[] = [
   },
   {
     id: 'venture-pictures',
+    href: 'https://www.platinumworld.net/platinumpictures',
     name: 'Platinum World Pictures',
     badge: 'Media & Production',
     tagline: 'Creating content that drives business',
@@ -159,6 +163,7 @@ export const ventures: VentureItem[] = [
   },
   {
     id: 'venture-lifestyle',
+    href: 'https://www.platinumworld.net/platinumworldlifestyle',
     name: 'Platinum World Lifestyle',
     badge: 'Curated Advisory',
     tagline: 'Advisory for Lifestyle solutions',
@@ -343,6 +348,19 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     dateBadge: 'ECONOMIC TIMES',
     imageSrc: '/images/15-economic-times.jpg',
     assetSlotName: 'ECONOMIC TIMES',
+    isPendingAsset: false,
+  },
+  {
+    id: 'media-06-aspire',
+    publication: 'ASPIRE',
+    category: 'Cover Story',
+    headline: 'Maestro of Luxury Experiences',
+    description:
+      'Featured on the cover of Aspire magazine’s January 2022 issue as an entrepreneur-influencer and Founder & CMD of Platinum World Grroup, with a feature on his luxury lifestyle and business journey.',
+    href: '#',
+    dateBadge: 'ASPIRE JAN 2022',
+    imageSrc: '/images/banners/435e91_1b282a567b48403f948bc7fb730c8ba7~mv2.jpeg',
+    assetSlotName: 'ASPIRE',
     isPendingAsset: false,
   },
 ];
