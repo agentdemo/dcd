@@ -261,6 +261,14 @@ export const campaigns: CollaborationBrand[] = [
     isPendingAsset: false,
   },
   {
+    id: 'collab-delano-dubai',
+    name: 'Delano Resort & Spa, Dubai',
+    category: 'Luxury Beachfront Sanctuary & Iconic Resort',
+    imageSrc: '/images/21-delano-resort-and-spa-dubai.jpg',
+    assetSlotName: 'Delano Resort & Spa, Dubai',
+    isPendingAsset: false,
+  },
+  {
     id: 'collab-grand-hotel',
     name: 'Grand Hotel Nuwara Eliya, Sri Lanka',
     category: 'Heritage Luxury & Grand Estate',
@@ -278,10 +286,10 @@ export const campaigns: CollaborationBrand[] = [
   },
   {
     id: 'collab-the-lana',
-    name: 'Brand Collab with The Lana By Dorchester Collection Dubai',
+    name: 'The Lana By Dorchester Collection Dubai',
     category: 'Luxury Hospitality & Living',
     imageSrc: '/images/04-brand-collab-the-lana-by-dorchester-collection-dubai.jpg',
-    assetSlotName: 'Brand Collab with The Lana By Dorchester Collection Dubai',
+    assetSlotName: 'The Lana By Dorchester Collection Dubai',
     isPendingAsset: false,
   },
   {
@@ -309,14 +317,6 @@ export const campaigns: CollaborationBrand[] = [
     isPendingAsset: false,
   },
   {
-    id: 'collab-greek-god',
-    name: 'Greek God Men’s Cologne',
-    category: 'Haute Parfumerie & Luxury Fragrance',
-    imageSrc: '/images/07-greek-god-mens-cologne.jpg',
-    assetSlotName: 'Greek God Men’s Cologne',
-    isPendingAsset: false,
-  },
-  {
     id: 'collab-switzerland',
     name: 'Switzerland Tourism',
     category: 'Destination Advisory & Tourism Board',
@@ -326,10 +326,10 @@ export const campaigns: CollaborationBrand[] = [
   },
   {
     id: 'collab-finland',
-    name: 'Brand Collab with Finland Tourism',
+    name: 'Finland Tourism',
     category: 'Nordic Luxury & Destination Campaign',
     imageSrc: '/images/10-brand-collab-finland-tourism.jpg',
-    assetSlotName: 'Brand Collab with Finland Tourism',
+    assetSlotName: 'Finland Tourism',
     isPendingAsset: false,
   },
 ];
