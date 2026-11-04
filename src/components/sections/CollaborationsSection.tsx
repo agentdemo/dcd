@@ -31,7 +31,7 @@ export default function CollaborationsSection() {
           <Reveal delay={1} className="lg:col-span-6 space-y-8">
             {/* Brand Verticals */}
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-luxe text-gold-400">Brand Verticals</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-luxe text-gold-400">Brand Attributes</h3>
               <div className="mt-4 flex flex-wrap gap-2.5">
                 {brandAttributes.map((attr) => (
                   <span
