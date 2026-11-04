@@ -422,7 +422,7 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
       'Featured on the cover of Aspire magazine’s January 2022 issue as an entrepreneur-influencer and Founder & CMD of Platinum World Grroup, with a feature on his luxury lifestyle and business journey.',
     href: '#',
     dateBadge: 'ASPIRE JAN 2022',
-    imageSrc: '/images/banners/435e91_1b282a567b48403f948bc7fb730c8ba7~mv2.jpeg',
+    imageSrc: '/images/banners/1.jpeg',
     assetSlotName: 'ASPIRE',
     isPendingAsset: false,
   },
