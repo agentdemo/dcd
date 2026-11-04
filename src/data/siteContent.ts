@@ -127,8 +127,8 @@ export interface VentureItem {
 export const ventures: VentureItem[] = [
   {
     id: 'venture-pwg',
-    href: 'https://www.platinumworld.net/',
     name: 'Platinum World Grroup',
+    href: 'https://www.platinumworld.net/',
     badge: 'Flagship Enterprise',
     tagline: '500+ Destinations | 100+ Countries | One Call Away',
     description:
@@ -139,8 +139,8 @@ export const ventures: VentureItem[] = [
   },
   {
     id: 'venture-artoso',
-    href: 'https://artosoworld.com/',
     name: 'Artoso Hospitality Corp',
+    href: 'https://artosoworld.com/',
     badge: 'Boutique Hospitality',
     tagline: 'Global Footprint. Local Flair. Luxury Boutique Hotels Worldwide.',
     description:
@@ -151,8 +151,8 @@ export const ventures: VentureItem[] = [
   },
   {
     id: 'venture-pictures',
-    href: 'https://www.platinumworld.net/platinumpictures',
     name: 'Platinum World Pictures',
+    href: 'https://www.platinumworld.net/platinumpictures',
     badge: 'Media & Production',
     tagline: 'Creating content that drives business',
     description:
@@ -163,8 +163,8 @@ export const ventures: VentureItem[] = [
   },
   {
     id: 'venture-lifestyle',
-    href: 'https://www.platinumworld.net/platinumworldlifestyle',
     name: 'Platinum World Lifestyle',
+    href: 'https://www.platinumworld.net/platinumworldlifestyle',
     badge: 'Curated Advisory',
     tagline: 'Advisory for Lifestyle solutions',
     description:
@@ -186,6 +186,27 @@ export const ventures: VentureItem[] = [
   },
 ];
 
+export interface PrivateJetShowcase {
+  title: string;
+  eyebrow: string;
+  tagline: string;
+  description: string;
+  imageSrc: string;
+  assetSlotName: string;
+  isPendingAsset: boolean;
+}
+
+export const privateJetShowcase: PrivateJetShowcase = {
+  eyebrow: 'Private Aviation Advisory',
+  title: 'Gulfstream Private Jets',
+  tagline: 'Uncompromising Mobility for Global Leaders',
+  description:
+    'Dedicated private jet charter, bespoke routing, and comprehensive aviation advisory connecting prime global corridors. Exclusive fleet coordination for international executive travel.',
+  imageSrc: '/images/08-gulfstream-private-jets.jpg',
+  assetSlotName: 'Gulfstream Private Jets',
+  isPendingAsset: false,
+};
+
 export const collaborationCategories = [
   'Luxury hotels and resorts',
   'Tourism boards and destinations',
@@ -200,6 +221,7 @@ export const collaborationCategories = [
 export interface CollaborationBrand {
   id: string;
   name: string;
+  category: string;
   imageSrc: string;
   assetSlotName: string;
   isPendingAsset: boolean;
@@ -209,64 +231,105 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-one-only',
     name: 'One&Only One Zabeel',
+    category: 'Ultra-Luxury Resort & Urban Sanctuary',
     imageSrc: '/images/02-one-and-only-one-zabeel.jpg',
     assetSlotName: 'One&Only One Zabeel',
     isPendingAsset: false,
   },
   {
+    id: 'collab-taj-jlt',
+    name: 'Taj Jumeirah Lake Towers, Dubai',
+    category: 'Luxury Hospitality & Skyline Sanctuary',
+    imageSrc: '/images/16-taj-jumeirah-lake-towers-dubai.jpg',
+    assetSlotName: 'Taj Jumeirah Lake Towers, Dubai',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-nautilus',
+    name: 'Nautilus Resort and Spa, Maldives',
+    category: 'Ultra-Luxury Private Island Sanctuary',
+    imageSrc: '/images/17-nautilus-resort-and-spa-maldives.jpg',
+    assetSlotName: 'Nautilus Resort and Spa, Maldives',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-al-habtoor',
+    name: 'Al Habtoor Palace, Dubai',
+    category: 'Palatial Luxury & Grand Living',
+    imageSrc: '/images/18-al-habtoor-palace-dubai.jpg',
+    assetSlotName: 'Al Habtoor Palace, Dubai',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-delano-dubai',
+    name: 'Delano Resort & Spa, Dubai',
+    category: 'Luxury Beachfront Sanctuary & Iconic Resort',
+    imageSrc: '/images/21-delano-resort-and-spa-dubai.jpg',
+    assetSlotName: 'Delano Resort & Spa, Dubai',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-grand-hotel',
+    name: 'Grand Hotel Nuwara Eliya, Sri Lanka',
+    category: 'Heritage Luxury & Grand Estate',
+    imageSrc: '/images/19-grand-hotel-nuwara-eliya-sri-lanka.jpg',
+    assetSlotName: 'Grand Hotel Nuwara Eliya, Sri Lanka',
+    isPendingAsset: false,
+  },
+  {
     id: 'collab-six-senses',
     name: 'Six Senses Zighy Bay',
-    imageSrc: '/images/05-itc-ratnadipa-colombo.jpg',
+    category: 'Boutique Eco-Luxury Sanctuary',
+    imageSrc: '/images/03-six-senses-zighy-bay.jpg',
     assetSlotName: 'Six Senses Zighy Bay',
     isPendingAsset: false,
   },
   {
     id: 'collab-the-lana',
-    name: 'Brand Collab with The Lana By Dorchester Collection Dubai',
+    name: 'The Lana By Dorchester Collection Dubai',
+    category: 'Luxury Hospitality & Living',
     imageSrc: '/images/04-brand-collab-the-lana-by-dorchester-collection-dubai.jpg',
-    assetSlotName: 'Brand Collab with The Lana By Dorchester Collection Dubai',
+    assetSlotName: 'The Lana By Dorchester Collection Dubai',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-scentitude',
+    name: 'Scentitude Perfume by Aerome',
+    category: 'Haute Parfumerie & Luxury Fragrance',
+    imageSrc: '/images/20-scentitude-perfume-by-aerome.jpg',
+    assetSlotName: 'Scentitude Perfume by Aerome',
     isPendingAsset: false,
   },
   {
     id: 'collab-itc-ratnadipa',
     name: 'ITC Ratnadipa Colombo',
-    imageSrc: '/images/03-six-senses-zighy-bay.jpg',
+    category: 'Iconic Oceanfront Luxury Hospitality',
+    imageSrc: '/images/05-itc-ratnadipa-colombo.jpg',
     assetSlotName: 'ITC Ratnadipa Colombo',
     isPendingAsset: false,
   },
   {
     id: 'collab-kahanda-kanda',
     name: 'Kahanda Kanda Resort, Sri Lanka',
+    category: 'Exclusive Boutique Estate & Sanctuary',
     imageSrc: '/images/06-kahanda-kanda-resort-sri-lanka.jpg',
     assetSlotName: 'Kahanda Kanda Resort, Sri Lanka',
     isPendingAsset: false,
   },
   {
-    id: 'collab-greek-god',
-    name: 'Greek God Men’s Cologne',
-    imageSrc: '/images/07-greek-god-mens-cologne.jpg',
-    assetSlotName: 'Greek God Men’s Cologne',
-    isPendingAsset: false,
-  },
-  {
     id: 'collab-switzerland',
     name: 'Switzerland Tourism',
+    category: 'Destination Advisory & Tourism Board',
     imageSrc: '/images/09-switzerland-tourism.jpg',
     assetSlotName: 'Switzerland Tourism',
     isPendingAsset: false,
   },
   {
     id: 'collab-finland',
-    name: 'Brand Collab with Finland Tourism',
+    name: 'Finland Tourism',
+    category: 'Nordic Luxury & Destination Campaign',
     imageSrc: '/images/10-brand-collab-finland-tourism.jpg',
-    assetSlotName: 'Brand Collab with Finland Tourism',
-    isPendingAsset: false,
-  },
-  {
-    id: 'collab-gulfstream',
-    name: 'Gulfstream Private Jets',
-    imageSrc: '/images/08-gulfstream-private-jets.jpg',
-    assetSlotName: 'Gulfstream Private Jets',
+    assetSlotName: 'Finland Tourism',
     isPendingAsset: false,
   },
 ];
