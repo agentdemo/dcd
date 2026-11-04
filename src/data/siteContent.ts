@@ -293,11 +293,11 @@ export const campaigns: CollaborationBrand[] = [
     isPendingAsset: false,
   },
   {
-    id: 'collab-scentitude',
-    name: 'Scentitude Perfume by Aerome',
+    id: 'collab-greek-god',
+    name: "Greek God Men's Cologne",
     category: 'Haute Parfumerie & Luxury Fragrance',
     imageSrc: '/images/20-scentitude-perfume-by-aerome.jpg',
-    assetSlotName: 'Scentitude Perfume by Aerome',
+    assetSlotName: "Greek God Men's Cologne",
     isPendingAsset: false,
   },
   {
@@ -330,6 +330,14 @@ export const campaigns: CollaborationBrand[] = [
     category: 'Nordic Luxury & Destination Campaign',
     imageSrc: '/images/10-brand-collab-finland-tourism.jpg',
     assetSlotName: 'Finland Tourism',
+    isPendingAsset: false,
+  },
+  {
+    id: 'collab-scentitude',
+    name: 'Scentitude Perfume by Aerome',
+    category: 'Haute Parfumerie & Luxury Fragrance',
+    imageSrc: '/images/WhatsApp_Image_2026-11-04_at_4.16.08_PM.jpeg',
+    assetSlotName: 'Scentitude Perfume by Aerome',
     isPendingAsset: false,
   },
 ];
