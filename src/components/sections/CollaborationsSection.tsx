@@ -90,7 +90,9 @@ export default function CollaborationsSection() {
                       <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">
                         {item.name}
                       </h4>
-                      <p className="mt-1 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">{item.location}</p>
+                      {item.location && (
+                        <p className="mt-1 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">{item.location}</p>
+                      )}
                     </div>
                   </article>
                 </Reveal>
@@ -115,7 +117,9 @@ export default function CollaborationsSection() {
                     <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">
                       {item.name}
                     </h4>
+                  {item.location && (
                     <p className="mt-1 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">{item.location}</p>
+                  )}
                   </div>
                 </article>
               </Reveal>

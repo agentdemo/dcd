@@ -288,8 +288,8 @@ export const campaigns: CollaborationBrand[] = [
   },
   {
     id: 'collab-the-lana',
-    name: 'The Lana By Dorchester Collection',
-    location: 'Dubai',
+    name: 'The Lana By Dorchester Collection, Dubai',
+    location: '',
     imageSrc: '/images/04-brand-collab-the-lana-by-dorchester-collection-dubai.jpg',
     assetSlotName: 'The Lana By Dorchester Collection Dubai',
     isPendingAsset: false,
