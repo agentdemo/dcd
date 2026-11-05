@@ -296,8 +296,8 @@ export const campaigns: CollaborationBrand[] = [
   },
   {
     id: 'collab-greek-god',
-    name: "Greek God Men's Cologne",
-    location: 'Scentitude by aérome',
+    name: 'Scentitude',
+    location: 'by aérome',
     imageSrc: '/images/20-scentitude-perfume-by-aerome.jpg',
     assetSlotName: "Greek God Men's Cologne",
     isPendingAsset: false,
