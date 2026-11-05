@@ -60,12 +60,11 @@ export default function ContactSection() {
       </div>
 
       {/* Footer */}
-      <footer className="mx-auto mt-24 flex max-w-7xl flex-col gap-4 border-t border-gold-500/20 px-6 pt-10 text-xs uppercase tracking-luxe text-ivory-200/60 sm:flex-row sm:items-center sm:justify-between lg:px-10">
-        <p className="font-medium text-ivory-200">
-          Sushill Waddhwa, International entrepreneur, investor, Founder &amp; CMD,<br />
-          <span className="whitespace-nowrap">Platinum World Grroup</span>
+      <footer className="mx-auto mt-24 flex max-w-7xl flex-col gap-4 border-t border-gold-500/20 px-6 pt-10 text-xs tracking-luxe text-ivory-200/60 sm:flex-row sm:items-center sm:justify-between lg:px-10">
+        <p className="font-medium text-ivory-200 normal-case">
+          international entrepreneur, investor, and Founder &amp; CMD of Platinum World Grroup
         </p>
-        <p>&copy; 2026-27 Sushill Waddhwa. All rights reserved.</p>
+        <p className="uppercase">&copy; 2026-27 Sushill Waddhwa. All rights reserved.</p>
       </footer>
     </section>
   );

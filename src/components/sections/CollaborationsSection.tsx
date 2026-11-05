@@ -135,11 +135,11 @@ export default function CollaborationsSection() {
               Mr. Sushill Waddhwa, write to
             </p>
             <a
-              href="https://mail.google.com/mail/?view=cm&to=info@platinumworld.net"
+              href="mailto:info@platinumworld.net"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Send an email to info@platinumworld.net in Gmail"
-              title="Email in Gmail"
+              aria-label="Send email to info@platinumworld.net"
+              title="Email: info@platinumworld.net"
               className="group flex h-14 w-14 items-center justify-center rounded-full border border-gold-500/30 bg-obsidian-950 text-gold-400 shadow-lg transition-all duration-300 hover:scale-110 hover:border-gold-400 hover:bg-gold-500 hover:text-obsidian-950 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] focus-visible:ring-2 focus-visible:ring-gold-400"
             >
               <Mail size={24} className="transition-transform duration-300 group-hover:scale-110" />
