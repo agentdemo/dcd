@@ -8,12 +8,20 @@ import {
   privateJetShowcase,
 } from '@/data/siteContent';
 
-export default function CollaborationsSection() {
-  const showcaseItems = [
-    { id: 'showcase-gulfstream', name: privateJetShowcase.title, location: privateJetShowcase.location, imageSrc: privateJetShowcase.imageSrc },
-    ...campaigns.map((c) => ({ id: c.id, name: c.name, location: c.location, imageSrc: c.imageSrc })),
-  ];
+interface ShowcaseItem {
+  id: string;
+  name: string;
+  location: string;
+  imageSrc?: string;
+}
 
+const showcaseItems: ShowcaseItem[] = [
+  { id: 'showcase-gulfstream', name: privateJetShowcase.title, location: privateJetShowcase.location, imageSrc: privateJetShowcase.imageSrc },
+  ...campaigns.map((c) => ({ id: c.id, name: c.name, location: c.location, imageSrc: c.imageSrc })),
+  { id: 'showcase-and-many-more', name: '', location: '' },
+];
+
+export default function CollaborationsSection() {
   return (
     <section id="collaborations" className="bg-[#070D1A] py-24 lg:py-32 border-b border-gold-500/20 text-ivory-100">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -76,24 +84,34 @@ export default function CollaborationsSection() {
                 <Reveal key={item.id} delay={(index % 4) as 1 | 2 | 3 | undefined}>
                   <article className="group flex h-full flex-col rounded-3xl border border-gold-500/25 bg-obsidian-900 p-5 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:border-gold-400 hover:shadow-2xl text-ivory-100">
                     <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-gold-500/20 bg-obsidian-950 transition-colors group-hover:border-gold-400/50 shadow-inner">
-                      <img
-                        src={item.imageSrc}
-                        alt={item.name}
-                        className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                      />
+                      {item.imageSrc ? (
+                        <img
+                          src={item.imageSrc}
+                          alt={item.name}
+                          className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center p-6 text-center">
+                          <span className="font-serif text-3xl font-medium leading-snug text-gold-300 transition-colors group-hover:text-gold-200">
+                            And Many More
+                          </span>
+                        </div>
+                      )}
                       <div className="absolute top-3 left-3 rounded-full bg-obsidian-950/90 border border-gold-500/30 px-2.5 py-0.5 text-[10px] font-mono font-medium text-gold-300 backdrop-blur-sm">
                         {String(index + 1).padStart(2, '0')}
                       </div>
                     </div>
-                    <div className="mt-4 flex flex-1 flex-col gap-1">
-                      <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">
-                        {item.name}
-                      </h4>
-                      {item.location && (
-                        <p className="mt-1 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">{item.location}</p>
-                      )}
-                    </div>
+                    {item.name && (
+                      <div className="mt-4 flex flex-1 flex-col gap-1">
+                        <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">
+                          {item.name}
+                        </h4>
+                        {item.location && (
+                          <p className="mt-1 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">{item.location}</p>
+                        )}
+                      </div>
+                    )}
                   </article>
                 </Reveal>
               );
@@ -103,24 +121,34 @@ export default function CollaborationsSection() {
               <Reveal key={item.id} delay={(index % 4) as 1 | 2 | 3 | undefined}>
                 <article className="group flex h-full flex-col rounded-3xl border border-ivory-300 bg-white p-5 shadow-md transition-all duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-xl text-ink-900">
                   <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-ivory-300 bg-ivory-50 transition-colors group-hover:border-gold-500 shadow-inner">
-                    <img
-                      src={item.imageSrc}
-                      alt={item.name}
-                      className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                    />
+                    {item.imageSrc ? (
+                      <img
+                        src={item.imageSrc}
+                        alt={item.name}
+                        className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center p-6 text-center">
+                        <span className="font-serif text-3xl font-medium leading-snug text-gold-700 transition-colors group-hover:text-gold-500">
+                          And Many More
+                        </span>
+                      </div>
+                    )}
                     <div className="absolute top-3 left-3 rounded-full bg-ink-900/85 px-2.5 py-0.5 text-[10px] font-mono font-medium text-ivory-100 backdrop-blur-sm">
                       {String(index + 1).padStart(2, '0')}
                     </div>
                   </div>
-                  <div className="mt-4 flex flex-1 flex-col gap-1">
-                    <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">
-                      {item.name}
-                    </h4>
-                  {item.location && (
-                    <p className="mt-1 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">{item.location}</p>
+                  {item.name && (
+                    <div className="mt-4 flex flex-1 flex-col gap-1">
+                      <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">
+                        {item.name}
+                      </h4>
+                      {item.location && (
+                        <p className="mt-1 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">{item.location}</p>
+                      )}
+                    </div>
                   )}
-                  </div>
                 </article>
               </Reveal>
             );
@@ -131,8 +159,9 @@ export default function CollaborationsSection() {
         <Reveal>
           <div className="mt-16 flex flex-col items-center gap-5 rounded-2xl border border-gold-500/30 bg-obsidian-900/80 p-6 shadow-xl max-w-xl mx-auto backdrop-blur-sm">
             <p className="text-center text-sm text-ivory-200">
-              For brand collaborations or brand ambassador partnerships with 
-              Mr. Sushill Waddhwa, write to
+              For brand collaborations or brand ambassador partnerships with
+              <br />
+              <span className="whitespace-nowrap">Mr. Sushill Waddhwa</span>, write to
             </p>
             <a
               href="https://mail.google.com/mail/?view=cm&to=info@platinumworld.net"
