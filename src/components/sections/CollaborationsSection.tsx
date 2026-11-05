@@ -131,7 +131,8 @@ export default function CollaborationsSection() {
         <Reveal>
           <div className="mt-16 flex flex-col items-center gap-5 rounded-2xl border border-gold-500/30 bg-obsidian-900/80 p-6 shadow-xl max-w-xl mx-auto backdrop-blur-sm">
             <p className="text-center text-sm text-ivory-200">
-              For brand collaborations or brand ambassador partnerships with Mr. Sushill Waddhwa, write to
+              For brand collaborations or brand ambassador partnerships with 
+              Mr. Sushill Waddhwa, write to
             </p>
             <a
               href="https://mail.google.com/mail/?view=cm&to=info@platinumworld.net"
