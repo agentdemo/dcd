@@ -17,15 +17,6 @@ export default function ContactSection() {
               For strategic partnerships, luxury brand collaborations, destination advisory, and international media inquiries.
             </p>
 
-            <div className="mt-10 border-l-2 border-gold-500 pl-6">
-              <p className="font-serif text-2xl font-medium text-ivory-50 sm:text-3xl">
-                {contactDetails.name}
-              </p>
-              <div className="mt-2 text-sm leading-relaxed text-ivory-200">
-                <p className="font-medium text-ivory-100">{contactDetails.role}</p>
-                <p className="font-serif text-lg text-gold-400">{contactDetails.company}</p>
-              </div>
-            </div>
           </Reveal>
 
           {/* Right Column: Direct Clickable Icons Only (Email, Instagram, LinkedIn) */}
@@ -71,7 +62,7 @@ export default function ContactSection() {
       {/* Footer */}
       <footer className="mx-auto mt-24 flex max-w-7xl flex-col gap-4 border-t border-gold-500/20 px-6 pt-10 text-xs uppercase tracking-luxe text-ivory-200/60 sm:flex-row sm:items-center sm:justify-between lg:px-10">
         <p className="font-medium text-ivory-200">
-          Founder &amp; CMD &bull; Platinum World Grroup
+          Sushill Waddhwa, International entrepreneur, investor, Founder &amp; CMD, Platinum World Grroup
         </p>
         <p>&copy; 2026-27 Sushill Waddhwa. All rights reserved.</p>
       </footer>

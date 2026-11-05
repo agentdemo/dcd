@@ -4,14 +4,13 @@ import {
   brandAttributes,
   campaigns,
   collaborationCategories,
-  contactDetails,
   privateJetShowcase,
 } from '@/data/siteContent';
 
 export default function CollaborationsSection() {
   const showcaseItems = [
-    { id: 'showcase-gulfstream', name: privateJetShowcase.title, imageSrc: privateJetShowcase.imageSrc },
-    ...campaigns.map((c) => ({ id: c.id, name: c.name, imageSrc: c.imageSrc })),
+    { id: 'showcase-gulfstream', name: privateJetShowcase.title, location: privateJetShowcase.location, imageSrc: privateJetShowcase.imageSrc },
+    ...campaigns.map((c) => ({ id: c.id, name: c.name, location: c.location, imageSrc: c.imageSrc })),
   ];
 
   return (
@@ -86,9 +85,12 @@ export default function CollaborationsSection() {
                         {String(index + 1).padStart(2, '0')}
                       </div>
                     </div>
-                    <h4 className="mt-4 font-serif text-xl font-medium text-ivory-50 group-hover:text-gold-300 transition-colors leading-snug">
-                      {item.name}
-                    </h4>
+                    <div className="mt-4 flex h-28 flex-col">
+                      <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">
+                        {item.name}
+                      </h4>
+                      <p className="mt-auto text-xs font-medium uppercase tracking-wider text-gold-400">{item.location}</p>
+                    </div>
                   </article>
                 </Reveal>
               );
@@ -108,9 +110,12 @@ export default function CollaborationsSection() {
                       {String(index + 1).padStart(2, '0')}
                     </div>
                   </div>
-                  <h4 className="mt-4 font-serif text-xl font-medium text-ink-900 group-hover:text-gold-700 transition-colors leading-snug">
-                    {item.name}
-                  </h4>
+                  <div className="mt-4 flex h-28 flex-col">
+                    <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">
+                      {item.name}
+                    </h4>
+                    <p className="mt-auto text-xs font-medium uppercase tracking-wider text-gold-700">{item.location}</p>
+                  </div>
                 </article>
               </Reveal>
             );
@@ -121,12 +126,14 @@ export default function CollaborationsSection() {
         <Reveal>
           <div className="mt-16 text-center rounded-2xl border border-gold-500/30 bg-obsidian-900/80 p-6 shadow-xl max-w-xl mx-auto backdrop-blur-sm">
             <p className="text-sm text-ivory-200">
-              For curated partnerships and brand inquiries, write to{' '}
+              For brand collaborations or brand ambassador partnerships with Mr. Sushill Waddhwa, write to{' '}
               <a
-                href={`mailto:${contactDetails.email}`}
+                href="https://info.platinumworld.net"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="link-underline font-semibold text-gold-300 hover:text-gold-200 transition-colors"
               >
-                {contactDetails.email}
+                info.platinumworld.net
               </a>
             </p>
           </div>

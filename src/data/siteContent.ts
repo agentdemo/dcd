@@ -109,7 +109,7 @@ export const aboutParagraphs = [
 export const aboutStats = [
   { value: '82', label: 'Countries' },
   { value: '2,040+', label: 'Luxury hotels' },
-  { value: '1989', label: 'The Journey Begins' },
+  { value: '1989', label: 'The Journey Began' },
 ];
 
 export interface VentureItem {
@@ -188,6 +188,7 @@ export const ventures: VentureItem[] = [
 
 export interface PrivateJetShowcase {
   title: string;
+  location: string;
   eyebrow: string;
   tagline: string;
   description: string;
@@ -199,6 +200,7 @@ export interface PrivateJetShowcase {
 export const privateJetShowcase: PrivateJetShowcase = {
   eyebrow: 'Private Aviation Advisory',
   title: 'Gulfstream Private Jets',
+  location: 'Dubai',
   tagline: 'Uncompromising Mobility for Global Leaders',
   description:
     'Dedicated private jet charter, bespoke routing, and comprehensive aviation advisory connecting prime global corridors. Exclusive fleet coordination for international executive travel.',
@@ -221,7 +223,7 @@ export const collaborationCategories = [
 export interface CollaborationBrand {
   id: string;
   name: string;
-  category: string;
+  location: string;
   imageSrc: string;
   assetSlotName: string;
   isPendingAsset: boolean;
@@ -231,47 +233,47 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-one-only',
     name: 'One&Only One Zabeel',
-    category: 'Ultra-Luxury Resort & Urban Sanctuary',
+    location: 'Dubai',
     imageSrc: '/images/02-one-and-only-one-zabeel.jpg',
     assetSlotName: 'One&Only One Zabeel',
     isPendingAsset: false,
   },
   {
     id: 'collab-taj-jlt',
-    name: 'Taj Jumeirah Lake Towers, Dubai',
-    category: 'Luxury Hospitality & Skyline Sanctuary',
+    name: 'Taj Jumeirah Lake Towers',
+    location: 'Dubai',
     imageSrc: '/images/16-taj-jumeirah-lake-towers-dubai.jpg',
     assetSlotName: 'Taj Jumeirah Lake Towers, Dubai',
     isPendingAsset: false,
   },
   {
     id: 'collab-nautilus',
-    name: 'Nautilus Resort and Spa, Maldives',
-    category: 'Ultra-Luxury Private Island Sanctuary',
+    name: 'Nautilus Resort and Spa',
+    location: 'Maldives',
     imageSrc: '/images/17-nautilus-resort-and-spa-maldives.jpg',
     assetSlotName: 'Nautilus Resort and Spa, Maldives',
     isPendingAsset: false,
   },
   {
     id: 'collab-al-habtoor',
-    name: 'Al Habtoor Palace, Dubai',
-    category: 'Palatial Luxury & Grand Living',
+    name: 'Al Habtoor Palace',
+    location: 'Dubai',
     imageSrc: '/images/18-al-habtoor-palace-dubai.jpg',
     assetSlotName: 'Al Habtoor Palace, Dubai',
     isPendingAsset: false,
   },
   {
     id: 'collab-delano-dubai',
-    name: 'Delano Resort & Spa, Dubai',
-    category: 'Luxury Beachfront Sanctuary & Iconic Resort',
+    name: 'Delano Resort & Spa',
+    location: 'Dubai',
     imageSrc: '/images/21-delano-resort-and-spa-dubai.jpg',
     assetSlotName: 'Delano Resort & Spa, Dubai',
     isPendingAsset: false,
   },
   {
     id: 'collab-grand-hotel',
-    name: 'Grand Hotel Nuwara Eliya, Sri Lanka',
-    category: 'Heritage Luxury & Grand Estate',
+    name: 'Grand Hotel Nuwara Eliya',
+    location: 'Sri Lanka',
     imageSrc: '/images/19-grand-hotel-nuwara-eliya-sri-lanka.jpg',
     assetSlotName: 'Grand Hotel Nuwara Eliya, Sri Lanka',
     isPendingAsset: false,
@@ -279,15 +281,15 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-six-senses',
     name: 'Six Senses Zighy Bay',
-    category: 'Boutique Eco-Luxury Sanctuary',
+    location: 'Oman',
     imageSrc: '/images/05-itc-ratnadipa-colombo.jpg',
     assetSlotName: 'Six Senses Zighy Bay',
     isPendingAsset: false,
   },
   {
     id: 'collab-the-lana',
-    name: 'The Lana By Dorchester Collection Dubai',
-    category: 'Luxury Hospitality & Living',
+    name: 'The Lana By Dorchester Collection',
+    location: 'Dubai',
     imageSrc: '/images/04-brand-collab-the-lana-by-dorchester-collection-dubai.jpg',
     assetSlotName: 'The Lana By Dorchester Collection Dubai',
     isPendingAsset: false,
@@ -295,47 +297,47 @@ export const campaigns: CollaborationBrand[] = [
   {
     id: 'collab-greek-god',
     name: "Greek God Men's Cologne",
-    category: 'Haute Parfumerie & Luxury Fragrance',
+    location: 'Scentitude by aérome',
     imageSrc: '/images/20-scentitude-perfume-by-aerome.jpg',
     assetSlotName: "Greek God Men's Cologne",
     isPendingAsset: false,
   },
   {
     id: 'collab-itc-ratnadipa',
-    name: 'ITC Ratnadipa Colombo',
-    category: 'Iconic Oceanfront Luxury Hospitality',
+    name: 'ITC Ratnadipa',
+    location: 'Sri Lanka',
     imageSrc: '/images/03-six-senses-zighy-bay.jpg',
     assetSlotName: 'ITC Ratnadipa Colombo',
     isPendingAsset: false,
   },
   {
     id: 'collab-kahanda-kanda',
-    name: 'Kahanda Kanda Resort, Sri Lanka',
-    category: 'Exclusive Boutique Estate & Sanctuary',
+    name: 'Kahanda Kanda Resort',
+    location: 'Sri Lanka',
     imageSrc: '/images/06-kahanda-kanda-resort-sri-lanka.jpg',
     assetSlotName: 'Kahanda Kanda Resort, Sri Lanka',
     isPendingAsset: false,
   },
   {
     id: 'collab-switzerland',
-    name: 'Switzerland Tourism',
-    category: 'Destination Advisory & Tourism Board',
+    name: 'Jungfraujoch',
+    location: 'Switzerland',
     imageSrc: '/images/09-switzerland-tourism.jpg',
     assetSlotName: 'Switzerland Tourism',
     isPendingAsset: false,
   },
   {
     id: 'collab-finland',
-    name: 'Finland Tourism',
-    category: 'Nordic Luxury & Destination Campaign',
+    name: 'Helsinki Tourism',
+    location: 'Finland',
     imageSrc: '/images/10-brand-collab-finland-tourism.jpg',
     assetSlotName: 'Finland Tourism',
     isPendingAsset: false,
   },
   {
     id: 'collab-scentitude',
-    name: 'Scentitude Perfume by Aerome',
-    category: 'Haute Parfumerie & Luxury Fragrance',
+    name: 'Scentitude Perfume',
+    location: 'by aérome',
     imageSrc: '/images/WhatsApp_Image_2026-11-04_at_4.16.08_PM.jpeg',
     assetSlotName: 'Scentitude Perfume by Aerome',
     isPendingAsset: false,
@@ -357,16 +359,16 @@ export interface MediaCoverageItem {
 
 export const mediaCoverageItems: MediaCoverageItem[] = [
   {
-    id: 'media-01-cio-times',
-    publication: 'CIO TIMES',
+    id: 'media-06-aspire',
+    publication: 'ASPIRE',
     category: 'Cover Story',
-    headline: 'Visionary Leadership: Building Global Conglomerate Platinum World Grroup',
+    headline: 'Maestro of Luxury Experiences',
     description:
-      'Founder & CMD Sushill Waddhwa discusses the pioneering journey of launching bespoke incentive travel, luxury destination weddings, and international MICE operations across 82+ countries.',
+      'Featured on the cover of Aspire magazine’s January 2022 issue as an entrepreneur-influencer and Founder & CMD of Platinum World Grroup, with a feature on his luxury lifestyle and business journey.',
     href: '#',
-    dateBadge: 'CIO TIMES',
-    imageSrc: '/images/11-cio-times.jpg',
-    assetSlotName: 'CIO TIMES',
+    dateBadge: 'ASPIRE JAN 2022',
+    imageSrc: '/images/banners/1.jpeg',
+    assetSlotName: 'ASPIRE',
     isPendingAsset: false,
   },
   {
@@ -422,16 +424,16 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     isPendingAsset: false,
   },
   {
-    id: 'media-06-aspire',
-    publication: 'ASPIRE',
+    id: 'media-01-cio-times',
+    publication: 'CIO TIMES',
     category: 'Cover Story',
-    headline: 'Maestro of Luxury Experiences',
+    headline: 'Visionary Leadership: Building Global Conglomerate Platinum World Grroup',
     description:
-      'Featured on the cover of Aspire magazine’s January 2022 issue as an entrepreneur-influencer and Founder & CMD of Platinum World Grroup, with a feature on his luxury lifestyle and business journey.',
+      'Founder & CMD Sushill Waddhwa discusses the pioneering journey of launching bespoke incentive travel, luxury destination weddings, and international MICE operations across 82+ countries.',
     href: '#',
-    dateBadge: 'ASPIRE JAN 2022',
-    imageSrc: '/images/banners/1.jpeg',
-    assetSlotName: 'ASPIRE',
+    dateBadge: 'CIO TIMES',
+    imageSrc: '/images/11-cio-times.jpg',
+    assetSlotName: 'CIO TIMES',
     isPendingAsset: false,
   },
 ];
