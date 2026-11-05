@@ -1,3 +1,4 @@
+import { Mail } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import SectionHeader from '@/components/SectionHeader';
 import {
@@ -73,7 +74,7 @@ export default function CollaborationsSection() {
             if (isBlue) {
               return (
                 <Reveal key={item.id} delay={(index % 4) as 1 | 2 | 3 | undefined}>
-                  <article className="group rounded-3xl border border-gold-500/25 bg-obsidian-900 p-5 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:border-gold-400 hover:shadow-2xl text-ivory-100">
+                  <article className="group flex h-full flex-col rounded-3xl border border-gold-500/25 bg-obsidian-900 p-5 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:border-gold-400 hover:shadow-2xl text-ivory-100">
                     <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-gold-500/20 bg-obsidian-950 transition-colors group-hover:border-gold-400/50 shadow-inner">
                       <img
                         src={item.imageSrc}
@@ -85,7 +86,7 @@ export default function CollaborationsSection() {
                         {String(index + 1).padStart(2, '0')}
                       </div>
                     </div>
-                    <div className="mt-4 flex h-28 flex-col">
+                    <div className="mt-4 flex flex-1 flex-col gap-1">
                       <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ivory-50 transition-colors group-hover:text-gold-300">
                         {item.name}
                       </h4>
@@ -98,7 +99,7 @@ export default function CollaborationsSection() {
 
             return (
               <Reveal key={item.id} delay={(index % 4) as 1 | 2 | 3 | undefined}>
-                <article className="group rounded-3xl border border-ivory-300 bg-white p-5 shadow-md transition-all duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-xl text-ink-900">
+                <article className="group flex h-full flex-col rounded-3xl border border-ivory-300 bg-white p-5 shadow-md transition-all duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-xl text-ink-900">
                   <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-ivory-300 bg-ivory-50 transition-colors group-hover:border-gold-500 shadow-inner">
                     <img
                       src={item.imageSrc}
@@ -110,7 +111,7 @@ export default function CollaborationsSection() {
                       {String(index + 1).padStart(2, '0')}
                     </div>
                   </div>
-                  <div className="mt-4 flex h-28 flex-col">
+                  <div className="mt-4 flex flex-1 flex-col gap-1">
                     <h4 className="line-clamp-2 font-serif text-xl font-medium leading-snug text-ink-900 transition-colors group-hover:text-gold-700">
                       {item.name}
                     </h4>
@@ -124,18 +125,20 @@ export default function CollaborationsSection() {
 
         {/* Brand Inquiries Callout */}
         <Reveal>
-          <div className="mt-16 text-center rounded-2xl border border-gold-500/30 bg-obsidian-900/80 p-6 shadow-xl max-w-xl mx-auto backdrop-blur-sm">
-            <p className="text-sm text-ivory-200">
-              For brand collaborations or brand ambassador partnerships with Mr. Sushill Waddhwa, write to{' '}
-              <a
-                href="https://info.platinumworld.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link-underline font-semibold text-gold-300 hover:text-gold-200 transition-colors"
-              >
-                info.platinumworld.net
-              </a>
+          <div className="mt-16 flex flex-col items-center gap-5 rounded-2xl border border-gold-500/30 bg-obsidian-900/80 p-6 shadow-xl max-w-xl mx-auto backdrop-blur-sm">
+            <p className="text-center text-sm text-ivory-200">
+              For brand collaborations or brand ambassador partnerships with Mr. Sushill Waddhwa, write to
             </p>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=info@platinumworld.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send an email to info@platinumworld.net in Gmail"
+              title="Email in Gmail"
+              className="group flex h-14 w-14 items-center justify-center rounded-full border border-gold-500/30 bg-obsidian-950 text-gold-400 shadow-lg transition-all duration-300 hover:scale-110 hover:border-gold-400 hover:bg-gold-500 hover:text-obsidian-950 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] focus-visible:ring-2 focus-visible:ring-gold-400"
+            >
+              <Mail size={24} className="transition-transform duration-300 group-hover:scale-110" />
+            </a>
           </div>
         </Reveal>
       </div>
