@@ -22,7 +22,7 @@ export default function HeroSlideshow() {
   const goTo = (next: number) => setIndex((next + total) % total);
 
   return (
-    <section id="home" className="pt-20">
+    <section id="home" aria-label="Sushill Waddhwa" className="pt-20">
       <div
         className="relative h-[86svh] min-h-[560px] w-full overflow-hidden bg-obsidian-950 lg:h-[90vh]"
         onMouseEnter={() => {
