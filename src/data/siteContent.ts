@@ -350,7 +350,6 @@ export interface MediaCoverageItem {
   category: string;
   headline: string;
   description: string;
-  href: string;
   dateBadge: string;
   imageSrc: string;
   assetSlotName: string;
@@ -365,7 +364,6 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     headline: 'Maestro of Luxury Experiences',
     description:
       'Featured on the cover of Aspire magazine’s January 2022 issue as an entrepreneur-influencer and Founder & CMD of Platinum World Grroup, with a feature on his luxury lifestyle and business journey.',
-    href: '#',
     dateBadge: 'ASPIRE JAN 2022',
     imageSrc: '/images/banners/1.jpeg',
     assetSlotName: 'ASPIRE',
@@ -378,7 +376,6 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     headline: 'The New Era of Destination Celebrations & Global Luxury Hospitality',
     description:
       'Executive insights on shifting paradigms in ultra-luxury weddings, bespoke destination curations, and turnkey event advisory in over 80 countries.',
-    href: '#',
     dateBadge: 'EXOTICA',
     imageSrc: '/images/12-exotica.jpg',
     assetSlotName: 'EXOTICA',
@@ -391,7 +388,6 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     headline: 'A Unique Concept in Corporate Entertainment & Talk Show Formats',
     description:
       'Featuring Sushill Waddhwa’s innovative corporate entertainment talk show concept, curating international celebrity entertainment, MICE galas, and bespoke luxury productions.',
-    href: '#',
     dateBadge: 'Bombay Times',
     imageSrc: '/images/13-times-of-india-bombay-times.jpg',
     assetSlotName: 'TIMES OF INDIA — Bombay Times',
@@ -404,7 +400,6 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     headline: 'High-Profile Milestone Weddings: Tendulkars & Dignitaries in Attendance',
     description:
       'Special feature on high-profile milestone destination weddings, hosting sports and business royalty, curated and managed internationally by Platinum World Grroup.',
-    href: '#',
     dateBadge: 'Delhi Times',
     imageSrc: '/images/14-times-of-india-delhi-times.jpg',
     assetSlotName: 'TIMES OF INDIA — Delhi Times',
@@ -417,7 +412,6 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     headline: 'The World Is Not Enough: 13 Years of Luxurious & Premium Experiences',
     description:
       'The Economic Times highlights Platinum World Grroup’s trailblazing portfolio of luxury hotel buyouts, grand destination celebrations, and international client engagements.',
-    href: '#',
     dateBadge: 'ECONOMIC TIMES',
     imageSrc: '/images/15-economic-times.jpg',
     assetSlotName: 'ECONOMIC TIMES',
@@ -430,7 +424,6 @@ export const mediaCoverageItems: MediaCoverageItem[] = [
     headline: 'Visionary Leadership: Building Global Conglomerate Platinum World Grroup',
     description:
       'Founder & CMD Sushill Waddhwa discusses the pioneering journey of launching bespoke incentive travel, luxury destination weddings, and international MICE operations across 82+ countries.',
-    href: '#',
     dateBadge: 'CIO TIMES',
     imageSrc: '/images/11-cio-times.jpg',
     assetSlotName: 'CIO TIMES',
